@@ -50,8 +50,11 @@
 	# Push commits from the local git repository to the origin or upstream remotes
 	done = !git push origin HEAD
 	
+	# Push commits from the local git repository to the origin or upstream remotes and rewrite history
+	donef = !git push -f origin HEAD	
+	
 	# Initial empty commit
-    empty = "!git commit -am\"[empty] Initial commit\" --allow-empty"
+	empty = "!git commit -am\"[empty] Initial commit\" --allow-empty"
 	
 	# Blame a file
 	bl = blame
@@ -75,7 +78,7 @@
 	dr = "!f() { git diff -w "$1"^.."$1"; }; f"
 	
 	# Shows changes from a revision
-    diffr = "!f() { git diff "$1"^.."$1"; }; f"
+	diffr = "!f() { git diff "$1"^.."$1"; }; f"
 	
 	
 	### FINDING FILES AND CONTENT INSIDE FILES ###
