@@ -113,7 +113,7 @@ An easy to use template to write README files in a quick way.
 
 1. Rename BLANK_README.md file
    ```sh
-   mv ./BLANK_README.md ~/README.md
+   mv ./BLANK_README.md ./README.md
    ```
 2. Copy the file in the root folder of your repository
 3. Modify the file as you wish
