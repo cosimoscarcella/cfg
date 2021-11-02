@@ -22,7 +22,7 @@
 	st = status -s
 	
 	# Fetch branches and tags removing any remote-tracking references that no longer exist on the remote
-	fapt = fetch -apt
+	f = fetch -apt
 	
 	# Incorporates changes from a remote repository into the current branch.
 	# Remove any remote-tracking references that no longer exist on the remote
@@ -84,7 +84,7 @@
 	### FINDING FILES AND CONTENT INSIDE FILES ###
 	
 	# Find a file path in codebase
-	f = "!git ls-files | grep -i"
+	ff = "!git ls-files | grep -i"
 	
 	# Find a pattern with ignore-case avoiding binary files
 	grep = grep -Ii
