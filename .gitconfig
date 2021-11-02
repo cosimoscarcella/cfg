@@ -129,6 +129,9 @@
 	# List all local branches and sort them by commit date, showing the most recent git branch first, based on commits made to it
 	brls = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
 	
+	# List all remote branches and sort them by commit date, showing the most recent git branch first, based on commits made to it
+	brlsr = branch -r --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
+	
 
 	### SHOW THE HISTORY OF COMMITS AND BRANCHES ###
 
@@ -143,6 +146,9 @@
 
 	# A short git log
 	le = log --oneline --decorate
+	
+	# Shows the branches graph with date and contributor
+	lag = log --all --graph --pretty=format:'%C(yellow)%h%Creset -%C(bold blue)%d%Creset %s %Cgreen(%cr) %Cred<%an>%Creset'
 	
 	# Shows the branch graph
 	tree = !git log --graph --decorate --all --oneline
