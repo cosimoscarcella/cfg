@@ -4,6 +4,8 @@
 
 [core]
 	# Auto-converting CRLF line endings into LF. For Operating System compatibility
+	# 'true' if you use Windows OS
+	# 'input' if you use Linux or MacOS
 	autocrlf = true
 
 [alias]
