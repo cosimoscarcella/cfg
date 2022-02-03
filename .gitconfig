@@ -64,6 +64,12 @@
 	# Clean working directory
 	cc = clean -dfx
 	
+	# Shelve files
+	shelve = stash --include-untracked
+	
+	# Unshelve files
+	unshelve = stash pop
+	
 	
 	### DIFFERENCES BETWEEN FILES ###
 	
