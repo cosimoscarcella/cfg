@@ -14,7 +14,6 @@
 	cl = clone
 	ci = commit
 	pl = pull
-	ps = push
 	co = checkout
 	br = branch
 	cp = cherry-pick
@@ -50,10 +49,10 @@
 	can = commit --amend --no-edit
 	
 	# Push commits from the local git repository to the origin or upstream remotes
-	done = !git push origin HEAD
+	ps = !git push origin HEAD
 	
 	# Push commits from the local git repository to the origin or upstream remotes and rewrite history
-	donef = !git push -f origin HEAD	
+	psf = !git push -f origin HEAD	
 	
 	# Initial empty commit
 	empty = "!git commit -am\"[empty] Initial commit\" --allow-empty"
